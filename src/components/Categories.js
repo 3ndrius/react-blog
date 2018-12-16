@@ -7,6 +7,5 @@ import CategoryNav from './../Layout/CategoryNav';
     <CategoryNav />
     </div>
   )
-
 }
 export default (Categories);
