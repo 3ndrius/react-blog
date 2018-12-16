@@ -27,7 +27,6 @@ import LazyLoad from 'react-lazy-load';
    
    });
   }
-
   render() {
   const { posts } = this.props;
   const postList = posts.length ? (
@@ -54,7 +53,6 @@ import LazyLoad from 'react-lazy-load';
   ) 
   : 
   (
-      // <div className="text-center"> No posts yet </div>
      <Loader />
   )
   return (
@@ -84,13 +82,11 @@ import LazyLoad from 'react-lazy-load';
           <hr/>
           <Category />
         </div>
-      
       </div>
     )
   }
 }
 const mapStateToProps = (state) => {
-  
   return{
     posts: state.posts.posts.slice(0,5),
     page: state.posts.ads,
